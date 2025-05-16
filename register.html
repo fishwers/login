@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Register</title>
+        <link rel="stylesheet" href="styler.css">
+    </head>
+    <body>
+        <!-- nome, cognome, anno di nascita,  email o telefono, password, conferma password -->
+
+        <div class="register-box"> 
+            <h1>REGISTRATI</h1>
+            <br>
+            <form action="dbreg.php" method="post">
+                <div class="form-columns">
+                    <div class="form-col">
+                        <h3>Nome:</h3>
+                        <div class="input-group">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <input type="text" name="nome" placeholder="Mario" required>
+                        </div>
+                        <h3>Cognome:</h3>
+                        <div class="input-group">
+                            <ion-icon name="people-outline"></ion-icon>
+                            <input type="text" name="cognome" placeholder="Rossi" required>
+                        </div>
+                        <h3>Anno di nascita:</h3>
+                        <div class="input-group">
+                            <ion-icon name="calendar-outline"></ion-icon>
+                            <input type="date" name="anno_nascita" required>
+                        </div>
+                        <h3>Sesso:</h3>
+                        <div class="input-group">
+                            <ion-icon name="transgender-outline"></ion-icon>
+                            <label>Maschio</label> <input type="radio" name="sesso" value="maschio" required>
+                            <label>Femmina</label> <input type="radio" name="sesso" value="femmina" required>
+                        </div>
+                    </div>
+                    <div class="form-col">
+                        <h3>Username:</h3>
+                        <div class="input-group">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                            <input type="text" name="username" placeholder="MarioRossi" required>
+                        </div>
+                        <h3>Email:</h3>
+                        <div class="input-group">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" name="email" placeholder="mario@email.com" required>
+                        </div>
+                        <h3>Password:</h3>
+                        <div class="input-group">
+                            <ion-icon name="lock-open-outline"></ion-icon>
+                            <input type="text" name="password" placeholder="Password" id="password" required>
+                        </div>
+                        <h3>Conferma:</h3>
+                        <div class="input-group">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="text" name="conferma_password" placeholder="Conferma password" id="conferma-password" required>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <br>
+                <input type="submit" value="Registrati" class="submit-btn">
+            </form>
+        </div>
+        <script src="script.js" defer></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="login-box"> 
+            <h1>LOGIN</h1>
+            <br>
+            <form action="dblog.php" method="post">
+                
+                <h3>Username:</h3>
+                <div class="input-group">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="text" name="username" placeholder="Marco856">
+                </div>
+                
+                <br>
+                <h3>Password:</h3>
+                <div class="input-group">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" name="password" placeholder="t1F0pCI12XCi">
+                </div>
+                
+                
+                <label class="remember-me">
+                    <input type="checkbox">
+                    Ricordami
+                </label>
+                
+                <input type="submit" value="Accedi" class="submit-btn">
+                <a href="register.html">Non sei registrato? Premi qui per registrarti</a>
+            </form>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    
+</html>
