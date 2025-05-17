@@ -1,5 +1,4 @@
 <?php 
-
 $conn = mysqli_connect("localhost","root","","utenti");
 $nome = $_POST['nome'];
 $cognome = $_POST['cognome'];

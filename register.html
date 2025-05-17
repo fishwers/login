@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -8,7 +9,7 @@
     </head>
     <body>
         <!-- nome, cognome, anno di nascita,  email o telefono, password, conferma password -->
-
+        
         <div class="register-box"> 
             <h1>REGISTRATI</h1>
             <br>
@@ -31,11 +32,14 @@
                             <input type="date" name="anno_nascita" required>
                         </div>
                         <h3>Sesso:</h3>
+                        
                         <div class="input-group">
-                            <ion-icon name="transgender-outline"></ion-icon>
+                            <ion-icon name="male-outline"></ion-icon>
                             <label>Maschio</label> <input type="radio" name="sesso" value="maschio" required>
+                            <ion-icon name="female-outline"></ion-icon>
                             <label>Femmina</label> <input type="radio" name="sesso" value="femmina" required>
                         </div>
+                        
                     </div>
                     <div class="form-col">
                         <h3>Username:</h3>
@@ -61,9 +65,12 @@
                         
                         
                     </div>
+                    
                 </div>
+                
                 <br>
                 <input type="submit" value="Registrati" class="submit-btn">
+                
             </form>
         </div>
         <script src="script.js" defer></script>

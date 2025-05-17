@@ -28,12 +28,15 @@ img, picture, video, canvas, svg {
 .register-box {
     display: flex;
     flex-direction: column;
-
+    
+    max-width: 800px;
+    margin: 2rem auto;
     padding: 3rem;
     background-color: rgb(14, 48, 68);
     box-shadow: 0 1rem 2rem -1rem rgb(34, 117, 165, 0.6);
     border-radius: 1rem;
     text-align: center;
+
     
   
 }
@@ -61,7 +64,6 @@ form h3 {
     text-decoration: underline;
 }
 .register-box .submit-btn {
-    
     outline: none;
     cursor: pointer;
     border: none;
@@ -138,7 +140,7 @@ form h3 {
     display: flex;
     gap: 3rem;
     justify-content: center;
-    width: 100%;
+    
    
 }
 
@@ -152,4 +154,21 @@ form h3 {
 .form-col .submit-btn,
 .form-col a {
     margin-top: 1.5rem;
+}
+@media (max-width: 480px) {
+  .register-box {
+    width: 90%;
+    padding: 2rem;
+    
+  }
+
+  .input-group {
+    height: auto;
+    padding: 1rem;
+  }
+  .form-columns {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
 }
