@@ -136,14 +136,14 @@ form h3 {
 }
 @media (max-width: 480px) {
   .login-box {
+    
     padding: 2rem;
   }
-  .input-group {
-    align-items: stretch;
-  }
+  
   .input-group ion-icon {
+    
     display: flex;
-    margin: 0 0 0.5rem 0;
+   
   }
   
 }
